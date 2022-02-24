@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cargo-monitoring-7426f",
+  "private_key_id": "7493f9debf219d920ce1d4dd7f95312165f06cba",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDR6QqGZuB8QGBf\nULcUrnD4A4ehpXSEIExX+Ii3hMcUb3+YGBFsLNhA/23GOZ3hw60Q7et8Vrd5c/51\n8K5ZPv+TrhRbIFoKwo9SxO3cIgQQoVLPZ/cPCuYfOKa1SFxntUu+eMhqMjTy7rej\nX9n3AB6U0PKaD6rmi78ksn7p3o6RoXRe3uZMiXkZwt9z+Ca8zybhJiLFMqi6BjiA\n6/l/W0FDk7N7ocAIHlwpRfsOzZXN3Vy6yqy+YrHOyEMyI7ffUjXhbs9xb5rKCZOo\nkTCc5mIDuOn1I1eDrTEAlfm4UdwjEnmbm0TaQ9DYTfLafkLUykhxmY1tUdZgyH+X\nWt8xPDwdAgMBAAECggEACVXhRJ5JWD1PYUMoYUsWIHGdE/CqgJXPJLpw73iAQhsT\nWaL4Y2SQhD4tQPufAe4UlwQod5yDscBu41/o4R85eUqXV9YrKv9W0HThqetOsvlP\nGC+k1TkZiESaEBs/wNJXTrP1yy31x41xArBonouVe0OFBppbx2pqUyonwCRIbZbj\n+TROwqKAeuiGkLMw6Ck3pgFXGzoUMxeGERw4rMjXskCvNiEvpM0CO26WmAYl6/ot\ngCVS0zOBsaDXkhSNCNX/z2xEbApSyT76eziWorn6etGP6Ci7dnQDW8bd2gQZznWZ\nxOhcesEhg/7DvtON5g8GYNEJUWdNixWtws3c7W0HAQKBgQD3szQCNcf2u+Mjc67x\ncmCT9N0RTlioZvdB/0YN+1Ax8ttc4+oiKqe6AMR0GLW4AWzOQtT3WPbQVssvjq1X\niRnzRvUiPheyuha1kkfi6FbIvSbBVCXVGhQ1/i6ySECKa+AcOvGgDSqxSm7w4+dW\nU8s6yhWII9p8nqJnxANkcl7q6QKBgQDY8ayImkaBbE6fyY8ZH9oYusdUwIarjUku\nbcXZ3HG42fAwDQaCZ3o7TETry/xovL0EE3dwQX+X8Rc0LB4nasx2l4pvzvlito6H\nd69+XZy54Qiq792SaSzY1QEEX7wyVvw9ibKoCnBYfL+lMLyvsyem2MC6012t3fjQ\nlLi0EwLfFQKBgQCNQL9O51aCCMFNzUGdZMlYdpG+tbvvRNCJ7UYI4SDpawHXZg11\nsHd3pcpiHlk6dm2S7h++chhF1MkH9Mg7G+8VgYh3H4uqG16p6qJd7nrW/K7mHtN4\nQ+f0pmAAwR01ErF5x89Uo02OTtEXRA//dcd2XhmLSk7lNB2PKQN6O5KPSQKBgQDD\nHppPQnKndQJCNMa/kiZWl6cwUvjM0wY++/w3Nk4SM/ITRaPVJbyKGM7kRVN/4EEg\nqWGDVWWtAuobwpJcYXIEN8gLR9yFLCyFKuBsh0Wu6PcixxpB1NbBLtL7XB+oJxQ3\nROGqwbjJ3WmA6ZTLchb3uXuejPx0pHBlKV32mCK9AQKBgAZkucHP51/Skl8lMX8r\nx1vOvNhn4IdSm7i5TZxEXF84XWRTAZJKWoO4nMncAkeimr1R9Hyq7Rjomp5ebkZq\nGkTtPU04RJHXBpyb5DXFpTfeBq3RMspcWyBGu2ul2lfZkHD2GUc4IUtyBJt9DDo3\nouOYDe5qf6+bzYbT6+61ImU8\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-w47cb@cargo-monitoring-7426f.iam.gserviceaccount.com",
+  "client_id": "117000401150324785847",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-w47cb%40cargo-monitoring-7426f.iam.gserviceaccount.com"
+}
