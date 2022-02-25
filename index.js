@@ -28,6 +28,7 @@ const data= {
     humidity: Number(req.body.humidity),
     coordinates: req.body.coordinates
 }
+console.log(req.body.email);
 
 db.collection('cargos').doc(`${req.body.email}`).collection(`${req.body.cid}`).doc(`${timeNow}`).set(data).then(()=>
 {
