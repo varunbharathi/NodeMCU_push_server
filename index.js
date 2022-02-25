@@ -24,11 +24,11 @@ app.post("/send",(req,res)=>{
 
 const data= {
     timestamp: timeNow,
-    temperature: Number(req.body.temprature),
+    temperature: Number(req.body.temperature),
     humidity: Number(req.body.humidity),
     coordinates: req.body.coordinates
 }
-console.log(req.body.email);
+console.log(req.body.temperature);
 
 db.collection('cargos').doc(`${req.body.email}`).collection(`${req.body.cid}`).doc(`${timeNow}`).set(data).then(()=>
 {
