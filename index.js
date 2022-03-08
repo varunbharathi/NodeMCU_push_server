@@ -1,4 +1,5 @@
 const express=require("express"); 
+const date = require('date-and-time');
 const PORT=process.env.PORT || 3000;
 const app= express();        //binds the express module to 'app'
 var cors = require('cors');
@@ -19,11 +20,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post("/send",(req,res)=>{
     
-    var now=new Date();
-    var timeNow= now.getTime();
-
+   let nowId= new Date();
+   let now=new Date();
+    now=String( date.format(now, 'YYYY/MM/DD HH:mm:ss'));
+    
 const data= {
-    timestamp: timeNow,
+    timestamp: now,
     temperature: Number(req.body.temperature),
     humidity: Number(req.body.humidity),
     coordinates: req.body.coordinates
@@ -40,7 +42,7 @@ db.collection('cargos').doc(`${req.body.cid}`).set(owner).then(()=>
     console.log("Error Occured while setting owner",e);
 });
 
-db.collection('cargos').doc(`${req.body.cid}`).collection(`data`).doc(`${timeNow}`).set(data).then(()=>
+db.collection('cargos').doc(`${req.body.cid}`).collection(`data`).doc(`${nowId}`).set(data).then(()=>
 {
     console.log("Data entered Successfully");
     res.send("Success!");
