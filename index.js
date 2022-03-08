@@ -34,7 +34,7 @@ const user={
 }
 console.log(req.body.temperature);
 
-db.collection('cargos').doc(`${req.body.cid}`).set(data).then(()=>
+db.collection('cargos').doc(`${req.body.cid}`).set(user).then(()=>
 {
 console.log("Owner set for cargo");
 
