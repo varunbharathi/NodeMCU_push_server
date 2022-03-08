@@ -30,7 +30,8 @@ const data= {
 }
 console.log(req.body.temperature);
 
-db.collection('cargos').doc(`${req.body.email}`).collection(`${req.body.cid}`).doc(`${timeNow}`).set(data).then(()=>
+
+db.collection('cargos').doc(`${req.body.cid}`).collection(`data`).doc(`${timeNow}`).set(data).set(data).then(()=>
 {
     console.log("Data entered Successfully");
     res.send("Success!");
