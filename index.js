@@ -29,20 +29,19 @@ const data= {
     coordinates: req.body.coordinates
 }
 
-const user={
-    user:`${req.body.email}`
+const owner={
+    owner:`${req.body.email}`
 }
 console.log(req.body.temperature);
 
-db.collection('cargos').doc(`${req.body.cid}`).set(user).then(()=>
+db.collection('cargos').doc(`${req.body.cid}`).set(owner).then(()=>
 {
-console.log("Owner set for cargo");
-
+ console.log("owner field added successfully")
 }).catch((e)=>{
     console.log("Error Occured while setting owner",e);
 });
 
-db.collection('cargos').doc(`${req.body.cid}`).collection(`data`).doc(`${timeNow}`).set(data).set(data).then(()=>
+db.collection('cargos').doc(`${req.body.cid}`).collection(`data`).doc(`${timeNow}`).set(data).then(()=>
 {
     console.log("Data entered Successfully");
     res.send("Success!");
