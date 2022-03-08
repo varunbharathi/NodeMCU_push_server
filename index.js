@@ -32,7 +32,6 @@ const data= {
 const owner={
     owner:`${req.body.email}`
 }
-console.log(req.body.temperature);
 
 db.collection('cargos').doc(`${req.body.cid}`).set(owner).then(()=>
 {
