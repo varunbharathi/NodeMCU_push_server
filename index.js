@@ -28,15 +28,26 @@ const data= {
     humidity: Number(req.body.humidity),
     coordinates: req.body.coordinates
 }
+
+const user={
+    user:`${req.body.email}`
+}
 console.log(req.body.temperature);
 
+db.collection('cargos').doc(`${req.body.cid}`).set(data).then(()=>
+{
+console.log("Owner set for cargo");
+
+}).catch((e)=>{
+    console.log("Error Occured while setting owner",e);
+});
 
 db.collection('cargos').doc(`${req.body.cid}`).collection(`data`).doc(`${timeNow}`).set(data).set(data).then(()=>
 {
     console.log("Data entered Successfully");
     res.send("Success!");
 }).catch((e)=>{
-    console.log("error occured", e);
+    console.log("error occured while writing data", e);
 });
 
 
