@@ -1,5 +1,6 @@
 const express=require("express"); 
 const date = require('date-and-time');
+const utcToIndiantime = require('utc-to-indiantime');
 const PORT=process.env.PORT || 3000;
 const app= express();        //binds the express module to 'app'
 var cors = require('cors');
@@ -20,15 +21,22 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post("/send",(req,res)=>{
     
-   let nowId= new Date();
-   let now=new Date();
-    now=String( date.format(now, 'YYYY/MM/DD HH:mm:ss'));
-    
+   let nowIdutc= new Date();
+   let nowIdist=utcToIndiantime(nowIdutc); 
+   
+  let nowist=String( date.format(nowIdist, 'YYYY/MM/DD HH:mm:ss'));
+   
+  let coordinates=req.body.coordinates;
+  let latLong=coordinates.split(",");
+
+
+
 const data= {
-    timestamp: now,
+    timestamp: nowist,
     temperature: Number(req.body.temperature),
     humidity: Number(req.body.humidity),
-    coordinates: req.body.coordinates
+    latitude: latLong[0],
+    longitude:latLong[1]
 }
 
 const owner={
@@ -42,7 +50,7 @@ db.collection('cargos').doc(`${req.body.cid}`).set(owner).then(()=>
     console.log("Error Occured while setting owner",e);
 });
 
-db.collection('cargos').doc(`${req.body.cid}`).collection(`data`).doc(`${nowId}`).set(data).then(()=>
+db.collection('cargos').doc(`${req.body.cid}`).collection(`data`).doc(`${nowIdist}`).set(data).then(()=>
 {
     console.log("Data entered Successfully");
     res.send("Success!");
