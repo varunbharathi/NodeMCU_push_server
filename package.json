@@ -9,6 +9,7 @@
   "author": "VBJ",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/mail": "^7.6.2",
     "body-parser": "^1.19.2",
     "cors": "^2.8.5",
     "date-and-time": "^2.2.1",
