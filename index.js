@@ -24,13 +24,17 @@ initializeApp({
   credential: cert(serviceAccount)
 });
 const db = getFirestore();
-id=new Date();
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+
+
 app.post("/send",(req,res)=>{
     
+
+    id=new Date().getTime();
    
     var time=new Date().toLocaleString('en-US', {timeZone: 'Asia/Kolkata', hour12: false})
     time=time.replace(",","");
