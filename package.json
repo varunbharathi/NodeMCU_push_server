@@ -14,6 +14,7 @@
     "date-and-time": "^2.2.1",
     "express": "^4.17.3",
     "firebase-admin": "^10.0.2",
+    "nodemailer": "^6.7.2",
     "nodemon": "^2.0.15",
     "utc-to-indiantime": "^1.0.7"
   }
